@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/background_gradient">
+    <!--
+    this gives space between the top of the screen and the textView widget
+    -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <!--
+        This is the title of the screen
+        -->
+    <TextView
+        android:id="@+id/text_register"
+        android:layout_width="wrap_content"
+        android:layout_height="74dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/Text_register_screen"
+        android:textSize="35sp"
+        android:typeface="serif" />
+    <!--
+    This widget is to send messages to the user, whether something is wrong or
+    registration is successful
+    -->
+    <TextView
+        android:id="@+id/register_message"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:typeface="serif"
+        android:text="" />
+    <!--
+        This widget allows the user to enter a first name
+        -->
+    <EditText
+        android:id="@+id/text_new_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="@string/text_new_first_name"
+        android:inputType="textPersonName" />
+    <!--
+        this allows the user to enter a lastname
+        -->
+    <EditText
+        android:id="@+id/text_new_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="@string/new_last_name"
+        android:inputType="textPersonName" />
+    <!--
+        allows the user to enter a date. note the inputType is number, so
+        only numbers can be entered
+        -->
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="@string/new_date_of_birth"
+        android:inputType="number" />
+    <!--
+        This allows the user to enter their email.
+        -->
+    <EditText
+        android:id="@+id/text_new_email_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/new_email"
+        android:inputType="textEmailAddress" />
+    <!--
+        this allows the user to enter their password
+        -->
+    <EditText
+        android:id="@+id/text_new_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/text_new_password"
+        android:inputType="textPassword" />
+    <!--
+    this allows the user to enter their password again to be confirmed
+    -->
+    <EditText
+        android:id="@+id/text_confirm_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_gravity="center_horizontal"
+        android:hint="@string/new_confirm_password"
+        android:inputType="textPassword" />
+    <!--
+        this button onclick will launch the RegisterProcessClick function
+        -->
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/button_register"
+        android:onClick="RegisterProcessClick"
+        android:background="@color/ButtonColor"/>
+    <!--
+        This gives space between two widgets
+        -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="54dp" />
+    <!--
+        the next two widgets are just instructions to the user about their registration
+        -->
+    <TextView
+        android:id="@+id/register_bottom_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/register_bottom_message"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/register_bottom_message2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="@string/register_bottom_message2" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<resources>
+    <!--
+    all the strings strings for the app are stored here
+    -->
+    <string name="app_name">The Dojo</string>
+    <string name="login_text">Login</string>
+    <string name="text_email">Email</string>
+    <string name="text_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="text_register">Create account. Click</string>
+    <string name="here_text_button">here</string>
+    <string name="Text_register_screen">Register</string>
+    <string name="text_new_first_name">First name</string>
+    <string name="text_new_password">New Password</string>
+    <string name="button_register">Register</string>
+    <string name="the_dojo">The Dojo</string>
+    <string name="new_last_name">Last Name</string>
+    <string name="new_date_of_birth">mmddyyyy</string>
+    <string name="new_email">Email</string>
+    <string name="new_confirm_password">Confirm Password</string>
+    <string name="welcome">Welcome</string>
+    <string name="main_email_message">The Dojo only accepts Farmingdale State College emails.</string>
+    <string name="register_bottom_message">Email must be a Farmingdale State College email.</string>
+    <string name="register_bottom_message2">Password must have at least five characters long.</string>
+</resources>

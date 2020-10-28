@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This is the parent layout.sets the orientation and the background to a custom color
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_gradient">
+    <!--
+    This is just a place holder to allow some space between the top of the screen and the textView
+    -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+    <!--
+    This is the Title of the screen
+    I  used layout_gravity to set the text in the middle of the screen
+    -->
+
+    <TextView
+        android:id="@+id/text_login"
+        android:layout_width="wrap_content"
+        android:layout_height="135dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/login_text"
+        android:textSize="35sp"
+        android:typeface="serif" />
+    <!--
+        This is only shown when there is an error message
+        -->
+    <TextView
+        android:id="@+id/login_message"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:textSize="30sp"
+        android:typeface="serif"
+        android:text="" />
+    <!--
+        This widget allows the user to enter their email
+        -->
+    <EditText
+        android:id="@+id/editText_Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="@string/text_email"/>
+    <!--
+        This widget allows the user to enter their password
+        Notice the inputType is password, so it is shown the characters are shown as dots
+        and information is kept confidential
+        -->
+    <EditText
+        android:id="@+id/editText_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:ems="10"
+        android:hint="@string/text_password"
+        android:inputType="textPassword"
+        />
+    <!--
+        This button has a specific color, and if pressed, MainProcessClick is initiated in java
+        -->
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/ButtonColor"
+        android:text="@string/login_button"
+        android:onClick="MainProcessClick"/>
+    <!--
+        This is used to have some space between the widgets
+        -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="11dp" />
+    <!--
+        This textView just writes a text on the sceen
+        -->
+    <TextView
+        android:id="@+id/register_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="@string/text_register" />
+    <!--
+        This textView is in bold because when clicked the onclickListener is activated
+        which starts a nw activity
+        -->
+    <TextView
+        android:id="@+id/here_text_button"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/here_text_button"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <!--
+        this is a message letting the user know that only farmingdale state college emails are accepted
+        -->
+    <TextView
+        android:id="@+id/bottom_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20sp"
+        android:text="@string/main_email_message" />
+    <!--
+        the linear layout is closed
+        -->
+</LinearLayout>
