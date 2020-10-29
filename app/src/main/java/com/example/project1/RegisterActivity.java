@@ -28,7 +28,8 @@ public class RegisterActivity extends AppCompatActivity {
     private String newPassWord;
     private String confirmPassword;
     private String message;
-    private int newDateOfBirth;
+    //NewDateOfBirth was an int
+    private String newDateOfBirth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,6 +74,7 @@ public class RegisterActivity extends AppCompatActivity {
     public void processData(){
         newFirstName=mNewFirstName.getText().toString();
         newLastName=mNewLastName.getText().toString();
+        newDateOfBirth= mNewDateOfBirth.getText().toString();
        /* String strBirth=mNewDateOfBirth.getText().toString();
         newDateOfBirth=Integer.parseInt(strBirth);
          I was not able to convert the date of birth TextView into an int for validation, the
@@ -83,10 +85,15 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
 
+
 //validateData() returns a boolean to registerProcessClick()
+
     public boolean validateData(){
 //This is the same code used in MainActivity as a validation method for the email widget
-        Pattern pattern=Pattern.compile("farmingdale@.edu");
+        Pattern dateOfBirth=Pattern.compile("^../../....$");
+        Matcher findDateOfBirth=dateOfBirth.matcher(newDateOfBirth);
+
+        Pattern pattern=Pattern.compile("@farmingdale.edu");
         Matcher findEmail=pattern.matcher(newEmail);
 //makes sure that the user has entered the fields asked for
         if (newFirstName.equals("")||newLastName.equals("")||newEmail.equals("")||newPassWord.equals("")||confirmPassword.equals("")) {
@@ -115,6 +122,11 @@ public class RegisterActivity extends AppCompatActivity {
 //works with the regex library and returns a boolean value whether a match is found
         else if(!(findEmail.find())){
             message="Invalid Email";
+            return true;
+        }
+//validation of date
+        else if(!(findDateOfBirth.find())){
+            message="Invalid Date of Birth";
             return true;
         }
 //if the program reaches here, then the app will start the new activity

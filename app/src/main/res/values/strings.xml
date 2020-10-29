@@ -15,11 +15,17 @@
     <string name="button_register">Register</string>
     <string name="the_dojo">The Dojo</string>
     <string name="new_last_name">Last Name</string>
-    <string name="new_date_of_birth">mmddyyyy</string>
+    <string name="new_date_of_birth">mm/dd/yyyy</string>
     <string name="new_email">Email</string>
     <string name="new_confirm_password">Confirm Password</string>
     <string name="welcome">Welcome</string>
     <string name="main_email_message">The Dojo only accepts Farmingdale State College emails.</string>
     <string name="register_bottom_message">Email must be a Farmingdale State College email.</string>
     <string name="register_bottom_message2">Password must have at least five characters long.</string>
+    <string name="continueButton">Continue</string>
+    <string name="ruleOfGame3">•Answer questions correctly to move on to the next one</string>
+    <string name="ruleOfGame2">•Each question may have a different answer format</string>
+    <string name="ruleOfGame1">•You will have 5 questions to answer</string>
+    <string name="titleRuleOfGame">These are the rules of the game</string>
+    <string name="answer_all_questions_correctly">Answer all questions correctly!</string>
 </resources>

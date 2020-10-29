@@ -2,7 +2,9 @@ package com.example.project1;
 //libraries used in the program
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class WelcomeActivity extends AppCompatActivity {
@@ -19,6 +21,10 @@ public class WelcomeActivity extends AppCompatActivity {
         mUserEmail=(TextView)findViewById(R.id.user_email);
         mUserEmail.setText(MainActivity.getEmail());
 
+    }
 
+    public void QuizEnterClick(View view) {
+        Intent intentRegister=new Intent(this,QuizActivity.class);
+        startActivity(intentRegister);
     }
 }
