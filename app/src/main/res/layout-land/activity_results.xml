@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultsActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_gradient">
+    <!--THis is the same as the portrait mode but custom for landscape. It also contains a scrollView
+    -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+    <TextView
+        android:id="@+id/titleResultsActivity"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_available"
+        android:layout_margin="10dp"
+        android:textSize="15sp"/>
+    <TextView
+        android:background="@drawable/question_bubble"
+        android:id="@+id/currentAttempt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_available"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:background="@drawable/question_bubble"
+        android:id="@+id/storedAttempts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_previous_attempts"
+        android:layout_margin="50dp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"/>
+    <Button
+        android:id="@+id/availableFile"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/ButtonColor"
+        android:text="@string/show_results"
+        android:onClick="readData"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

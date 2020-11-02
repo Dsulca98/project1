@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmationFragment"
+    android:orientation="vertical"
+    android:background="#2196F3">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <!-- This activity is currently not in use
+        -->
+
+    <TextView
+        android:id="@+id/fragment_textview"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="100dp"
+        android:text="@string/hello_blank_fragment" />
+    <Button
+        android:id="@+id/fragment_button"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:layout_margin="40dp"
+        android:onClick="ProcessFragmentClick"/>
+
+    </LinearLayout>
+

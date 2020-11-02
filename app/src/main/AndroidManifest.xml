@@ -9,8 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".QuizActivity"></activity>
-        <!--         The action bar at the top of the screen is removed by changing the theme -->
+        <activity android:name=".ResultsActivity"></activity>
+        <activity android:name=".MultipleAnswerActivity" />
+        <activity android:name=".QuizActivity" /> <!-- The action bar at the top of the screen is removed by changing the theme -->
         <activity
             android:name=".WelcomeActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
@@ -28,7 +29,7 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>

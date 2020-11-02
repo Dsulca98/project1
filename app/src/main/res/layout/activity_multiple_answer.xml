@@ -7,7 +7,7 @@
     tools:context=".QuizActivity"
     android:orientation="vertical"
     android:background="@drawable/background_gradient">
-    <!-- the TextView will show a message and remind the user that they cannot go back from current question
+    <!-- This activity is similar to the activity_quiz, but it has checkBoxes instead of radioButtons
         -->
     <Space
         android:layout_width="match_parent"
@@ -22,8 +22,6 @@
     <Space
         android:layout_width="match_parent"
         android:layout_height="15dp"/>
-    <!-- Linear Layout will contain the questions in a unique background
-    -->
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -40,64 +38,49 @@
             android:text="@string/no_questions_available"
             android:layout_marginTop="25dp"/>
     </LinearLayout>
-    <!--
-    The frameLayout is not used, but it can be implemented in the future
-    -->
-    <FrameLayout
-        android:id="@+id/messageUI"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+
+            <CheckBox
+
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/checkBubble1"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/answer_bubble"
+                android:text="@string/no_answer_available"/>
+
+            <CheckBox
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/checkBubble2"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/answer_bubble"
+                android:text="@string/no_answer_available"/>
+
+            <CheckBox
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/checkBubble3"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/answer_bubble"
+                android:text="@string/no_answer_available"/>
+
+            <CheckBox
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/checkBubble4"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/answer_bubble"
+                android:text="@string/no_answer_available"/>
+
+    <Button
+        android:id="@+id/MAselectAnswer"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
         android:layout_gravity="center_horizontal"
-        >
-        <!--
-        radio group holds all the radio buttons and makes it so only one radio button can be selected at once
-            -->
-        <RadioGroup
-            android:id="@+id/radioGroup"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center">
-
-            <RadioButton
-                android:id="@+id/radioBubble1"
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/answer_bubble"
-                android:text="@string/no_answer_available"/>
-
-            <RadioButton
-                android:id="@+id/radioBubble2"
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/answer_bubble"
-                android:text="@string/no_answer_available"/>
-
-            <RadioButton
-                android:id="@+id/radioBubble3"
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/answer_bubble"
-                android:text="@string/no_answer_available"/>
-
-            <RadioButton
-                android:id="@+id/radioBubble4"
-                android:layout_width="240dp"
-                android:layout_height="wrap_content"
-                android:background="@drawable/answer_bubble"
-                android:text="@string/no_answer_available"/>
-        </RadioGroup>
+        android:background="@color/ButtonColor"
+        android:onClick="selectAnswerMA"
+        android:text="@string/continueButton"
+        tools:ignore="OnClick" />
 
 
-    </FrameLayout>
-    <!--
-    the button has the function to check the answer and move to the next question
-    -->
-        <Button
-            android:id="@+id/selectAnswer"
-            android:layout_width="150dp"
-            android:layout_height="35dp"
-            android:layout_gravity="center_horizontal"
-            android:background="@color/ButtonColor"
-            android:onClick="selectAnswer"
-            android:text="@string/continueButton" />
 </LinearLayout>

@@ -27,5 +27,31 @@
     <string name="ruleOfGame2">•Each question may have a different answer format</string>
     <string name="ruleOfGame1">•You will have 5 questions to answer</string>
     <string name="titleRuleOfGame">These are the rules of the game</string>
-    <string name="answer_all_questions_correctly">Answer all questions correctly!</string>
+    <string name="answer_all_questions_correctly">Answer all questions correctly!\nYou may not return to previous question</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_questions_available">No questions available</string>
+    <!-- Questions for quiz -->
+    <string name="question1">What year was the very first model of the iPhone released?</string>
+    <string name="question2">What does CPU stand for? Central processing unit</string>
+    <string name="question3">Originally Amazon only sold which product? books</string>
+    <string name="question4">Along with whom did Bill Gates found Microsoft? Paul Allen</string>
+    <string name="question5">What year did the Beatles debut their first single?</string>
+    <string name="question6">What colors will the new iphone 12 come in?</string>
+    <!-- Answers for the quiz-->
+    <string name="answer1">2005,2006,2007,2008</string>
+    <string name="answer2">Central Processing Unit,Controlled Puppy Unit,Crammed Processor Unit, Controlled Plutonium Unit</string>
+    <string name="answer3">Curtains,Bananas,Books,Pencils</string>
+    <string name="answer4">Bill Clinton,Paul Allen,Steve Jobs,Elon Musk</string>
+    <string name="answer5">2005,1950,1953,1962</string>
+    <string name="answer6">Black,Blue,Mint Green,Purple</string>
+    <!-- Answer key-->
+    <string name="Answer_key">2007,Central Processing Unit,Books,Paul Allen,1962</string>
+    <string name="Answer_key_MA">Black,Blue,Mint Green</string>
+    <string name="no_answer_available">No Answer Available</string>
+    <string name="not_available">Not Available</string>
+    <string name="no_previous_attempts">No Previous Attempts</string>
+    <string name="show_results">Show Results</string>
+
+
 </resources>
